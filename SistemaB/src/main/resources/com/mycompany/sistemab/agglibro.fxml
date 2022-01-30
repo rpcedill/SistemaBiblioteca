@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.sistemab.AgglibroController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="12.0" layoutY="12.0" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="70.0" prefWidth="278.0" text="Agregar Libro" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="122.0" text="Código" textAlignment="CENTER" />
+                        <TextField fx:id="txtcod" />
+                     </children>
+                  </HBox>
+                  <Label />
+                  <Button fx:id="btonvalidar" mnemonicParsing="false" onAction="#validar" prefHeight="25.0" prefWidth="67.0" text="Validar" />
+                  <VBox fx:id="vbox" alignment="CENTER" prefHeight="103.0" prefWidth="600.0" visible="false">
+                     <children>
+                        <HBox fx:id="bloqueA" alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="122.0" text="Título:" textAlignment="CENTER" />
+                              <TextField fx:id="txttitulo" />
+                           </children>
+                        </HBox>
+                        <HBox fx:id="bloqueB" alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="124.0" text="Autor:" textAlignment="CENTER" />
+                              <TextField fx:id="txtautor" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label fx:id="lblcant" alignment="CENTER" prefHeight="17.0" prefWidth="125.0" text="Cantidad disponible:" />
+                              <TextField fx:id="txtcant" />
+                           </children>
+                        </HBox>
+                        <Label />
+                        <Button mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+                     </children>
+                  </VBox>
+                  <Label />
+                  <HBox>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="57.0" />
+                        <Button mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
